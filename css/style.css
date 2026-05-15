@@ -121,3 +121,98 @@ h6 {
 .header__cart:hover::after {
   transform: scaleX(1);
 }
+
+/* =========================
+  HERO
+========================= */
+
+.hero {
+  position: relative;
+
+  min-height: 700px;
+
+  background-image: url('../images/hero/hero-bedroom.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__container {
+  position: relative;
+
+  min-height: 700px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 900px;
+
+  text-align: center;
+
+  color: var(--color-white);
+}
+
+.hero__title {
+  margin-bottom: 32px;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  max-width: 800px;
+}
+
+.hero__button {
+  padding: 6px 42px;
+
+  border: 1px solid var(--color-white);
+
+  font-family: var(--font-accent);
+  font-size: 20px;
+  font-weight: 700;
+
+  color: var(--color-white);
+
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+.hero__button:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.hero__decor-link {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  z-index: 1;
+
+  padding: 16px 32px;
+
+  background-color: var(--color-black);
+
+  font-family: var(--font-accent);
+  font-size: 15px;
+
+  color: var(--color-white);
+
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+.hero__decor-link:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
