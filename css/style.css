@@ -248,3 +248,27 @@ h6 {
 .benefits__text {
   font-size: 13px;
 }
+
+/* =========================
+  GALLERY
+========================= */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery__item {
+  min-height: 320px;
+}
+
+.gallery__image-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
