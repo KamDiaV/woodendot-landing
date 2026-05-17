@@ -216,3 +216,35 @@ h6 {
   background-color: var(--color-white);
   color: var(--color-black);
 }
+
+/* =========================
+  BENEFITS
+========================= */
+
+.benefits__container {
+  padding: 0 38px;
+}
+
+.benefits__list {
+  min-height: 155px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.benefits__item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.benefits__icon {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.benefits__text {
+  font-size: 13px;
+}

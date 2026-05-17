@@ -1,0 +1,15 @@
+ <svg
+      class="benefits__rating-icon"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 3L14.9 8.26L20.8 9.27L16.4 13.14L17.5 19L12 16.2L6.5 19L7.6 13.14L3.2 9.27L9.1 8.26L12 3Z"
+        stroke="currentColor"
+        stroke-width="0.6"
+        stroke-linejoin="round"
+      />
+    </svg>
