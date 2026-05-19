@@ -20,6 +20,7 @@ body {
   color: var(--color-black);
   background-color: var(--color-white);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 img {
@@ -256,6 +257,7 @@ h6 {
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 114px;
 }
 
 .gallery__item {
@@ -271,4 +273,147 @@ h6 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* =========================
+  PRODUCTS
+========================= */
+
+.products {
+  margin-bottom: 60px;
+}
+
+.products__container {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.product--reverse {
+  grid-template-columns: 2fr 1fr;
+}
+
+.product__info {
+  max-width: 430px;
+  justify-self: end;
+  padding-right: 22px;
+  text-align: right;
+}
+
+.product--reverse .product__info {
+  justify-self: start;
+  padding-left: 22px;
+  text-align: left;
+}
+
+.product__title {
+  margin-bottom: 16px;
+  font-size: 33px;
+  font-weight: 700;
+}
+
+.product__subtitle {
+  margin-bottom: 24px;
+  font-family: var(--font-accent);
+  font-size: 18px;
+  font-style: italic;
+}
+
+.product__price {
+  margin-bottom: 26px;
+  font-family: var(--font-accent);
+  font-size: 15px;
+}
+
+.product__text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product__description {
+  font-family: var(--font-accent);
+  font-size: 18px;
+  color: #525252;
+}
+
+.product__details {
+  font-family: var(--font-accent);
+  font-size: 16px;
+  color: #54595F;
+}
+
+.product__link {
+  margin-top: 47px;
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+}
+
+.product__text-group--single + .product__link {
+  margin-top: 66px;
+}
+
+.product__link::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: currentColor;
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 0.3s ease;
+}
+
+.product__link:hover::after {
+  transform: scaleX(1);
+}
+
+.product__image-wrapper {
+  height: 540px;
+  margin-right: -20px;
+}
+
+.product--reverse .product__image-wrapper {
+  margin-right: 0;
+  margin-left: -20px;
+}
+
+.product__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product__label {
+  display: block;
+  margin-bottom: 20px;
+  font-family: var(--font-accent);
+  font-size: 14px;
+  font-style: italic;
+  color: #BC1414;
+}
+
+.product__awards {
+  display: flex;
+  gap: 16px;
+  margin-top: 57px;
+}
+
+.product__award {
+  width: 70px;
+  height: auto;
 }
