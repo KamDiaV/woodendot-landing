@@ -642,3 +642,52 @@ h6 {
 .values__link:hover::after {
   transform: scaleX(1);
 }
+
+/* =========================
+  BRANDS
+========================= */
+
+.brands {
+  max-width: 1440px;
+  margin: 0 auto 82px;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.brands__title {
+  margin-bottom: 41px;
+  font-family: var(--font-accent);
+  font-size: 20px;
+  color: #454545;
+}
+
+.brands__logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 40px;
+  cursor: pointer;
+}
+
+.brands__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brands__logo {
+  max-height: 104px;
+  width: auto;
+
+  object-fit: contain;
+
+  transition:
+    opacity var(--transition),
+    transform var(--transition);
+}
+
+.brands__logo:hover {
+  opacity: 0.7;
+  transform: translateY(-2px);
+}
