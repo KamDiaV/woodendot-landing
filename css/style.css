@@ -367,7 +367,7 @@ h6 {
   font-size: 17px;
 }
 
-.product__text-group--single + .product__link {
+.product__text-group--single+.product__link {
   margin-top: 66px;
 }
 
