@@ -213,6 +213,10 @@ h6 {
 }
 
 @media (max-width: 480px) {
+  .header__container {
+    padding: 10px;
+  }
+
   .header__menu--open {
     width: 100%;
     padding: 80px 24px 24px;
@@ -815,6 +819,7 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .footer__title {
@@ -923,7 +928,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 100px;
+  gap: 80px;
 }
 
 .footer__copyright {
@@ -933,8 +938,10 @@ h6 {
 
 .footer__payments {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .footer__payment {
@@ -979,4 +986,92 @@ h6 {
 
 .footer__legal-link:hover::after {
   transform: scaleX(1);
+}
+
+@media (max-width: 1024px) {
+  .footer__container {
+    padding: 40px 60px 50px;
+  }
+
+  .footer__top {
+    gap: 60px;
+  }
+
+  .footer__navigation {
+    gap: 60px
+  }
+
+  .footer__title {
+    font-size: 20px;
+  }
+
+  .footer__bottom {
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__container {
+    padding: 40px 24px;
+  }
+
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .footer__navigation {
+    width: 100%;
+
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .footer__newsletter {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer__bottom {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .footer__legal {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__container {
+    padding: 40px 10px;
+  }
+
+  .footer__navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__title {
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+
+  .footer__link,
+  .footer__newsletter-text,
+  .footer__newsletter-link {
+    font-size: 14px;
+  }
+
+  .footer__legal-link,
+  .footer__separator,
+  .footer__copyright {
+    font-size: 11px;
+  }
 }
