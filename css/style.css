@@ -327,6 +327,74 @@ h6 {
   color: var(--color-black);
 }
 
+@media (max-width: 1024px) {
+  .hero,
+  .hero__container {
+    min-height: 600px;
+  }
+
+  .hero__title {
+    max-width: 700px;
+    font-size: 24px;
+  }
+
+  .hero__button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .hero__container {
+    min-height: 500px;
+  }
+
+  .hero__title {
+    max-width: 600px;
+    font-size: 22px;
+  }
+
+  .hero__button {
+    padding: 6px 32px;
+    font-size: 17px;
+  }
+
+  .hero__decor-link {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero,
+  .hero__container {
+    min-height: 420px;
+  }
+
+  .hero__title {
+    margin-bottom: 24px;
+    font-size: 20px;
+  }
+
+  .hero__button {
+    padding: 6px 24px;
+    font-size: 15px;
+  }
+
+  .hero__decor-link {
+    width: calc(100% - 20px);
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 12px 16px;
+
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
 /* =========================
   BENEFITS
 ========================= */
