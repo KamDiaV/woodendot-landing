@@ -880,6 +880,61 @@ h6 {
   transform: scaleX(1);
 }
 
+@media (max-width: 1024px) {
+  .values {
+    margin-bottom: 80px;
+  }
+
+  .values__item {
+    min-height: 320px;
+    padding: 40px 16px;
+  }
+
+  .values__icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 24px;
+  }
+
+  .values__title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .values {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .values {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+
+  .values__item {
+    min-height: auto;
+    padding: 32px 20px;
+  }
+
+  .values__icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+
+  .values__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .values__text,
+  .values__link {
+    font-size: 14px;
+  }
+}
+
 /* =========================
   BRANDS
 ========================= */
