@@ -522,6 +522,28 @@ h6 {
   object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 80px;
+  }
+
+  .gallery__item {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+
+  .gallery__item {
+    min-height: 240px;
+  }
+}
+
 /* =========================
   PRODUCTS
 ========================= */
