@@ -527,6 +527,145 @@ h6 {
   height: auto;
 }
 
+@media (max-width: 1024px) {
+  .product__info {
+    max-width: 360px;
+  }
+
+  .product__image-wrapper {
+    height: 460px;
+  }
+
+  .product__title {
+    font-size: 28px;
+  }
+
+  .product__subtitle,
+  .product__description {
+    font-size: 16px;
+  }
+
+  .product__link {
+    margin-top: 36px;
+  }
+
+  .product__text-group--single+.product__link {
+    margin-top: 44px;
+  }
+
+  .product__awards {
+    margin-top: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .product,
+  .product--reverse {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .product__info,
+  .product--reverse .product__info {
+    max-width: 100%;
+
+    padding: 0;
+
+    justify-self: center;
+
+    text-align: center;
+  }
+
+  .product__image-wrapper,
+  .product--reverse .product__image-wrapper {
+    height: 420px;
+
+    margin: 0;
+  }
+
+  .product--reverse .product__image-wrapper {
+    order: 2;
+  }
+
+  .product--reverse .product__info {
+    order: 1;
+  }
+
+  .product__awards {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .products {
+    margin-bottom: 40px;
+  }
+
+  .products__container {
+    gap: 40px;
+  }
+
+  .product {
+    gap: 16px;
+  }
+
+  .product__image-wrapper,
+  .product--reverse .product__image-wrapper {
+    height: 300px;
+  }
+
+  .product__title {
+    margin-bottom: 12px;
+    font-size: 24px;
+  }
+
+  .product__subtitle {
+    margin-bottom: 16px;
+    font-size: 15px;
+  }
+
+  .product__price {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+
+  .product__description {
+    font-size: 15px;
+  }
+
+  .product__details {
+    font-size: 14px;
+  }
+
+  .product__text-group {
+    gap: 16px;
+  }
+
+  .product__link {
+    margin-top: 24px;
+    font-size: 15px;
+  }
+
+  .product__text-group--single+.product__link {
+    margin-top: 24px;
+  }
+
+  .product__label {
+    margin-bottom: 12px;
+    font-size: 13px;
+  }
+
+  .product__awards {
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .product__award {
+    width: 56px;
+  }
+}
+
 /* =========================
   INSPIRATION
 ========================= */
@@ -998,7 +1137,7 @@ h6 {
   }
 
   .footer__navigation {
-    gap: 60px
+    gap: 60px;
   }
 
   .footer__title {
