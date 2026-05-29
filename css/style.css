@@ -213,10 +213,6 @@ h6 {
 }
 
 @media (max-width: 480px) {
-  .header__container {
-    padding: 10px;
-  }
-
   .header__menu--open {
     width: 100%;
     padding: 80px 24px 24px;
