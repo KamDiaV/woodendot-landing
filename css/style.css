@@ -328,6 +328,7 @@ h6 {
 }
 
 @media (max-width: 1024px) {
+
   .hero,
   .hero__container {
     min-height: 600px;
@@ -344,6 +345,7 @@ h6 {
 }
 
 @media (max-width: 768px) {
+
   .hero,
   .hero__container {
     min-height: 500px;
@@ -367,6 +369,7 @@ h6 {
 }
 
 @media (max-width: 480px) {
+
   .hero,
   .hero__container {
     min-height: 420px;
@@ -1281,6 +1284,63 @@ h6 {
 .brands__logo:hover {
   opacity: 0.7;
   transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .brands {
+    margin-bottom: 70px;
+  }
+
+  .brands__logos {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .brands__logo {
+    max-height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brands {
+    margin-bottom: 60px;
+    padding: 0 20px;
+  }
+
+  .brands__title {
+    margin-bottom: 32px;
+    font-size: 18px;
+  }
+
+  .brands__logos {
+    gap: 24px;
+  }
+
+  .brands__logo {
+    max-height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brands {
+    margin-bottom: 40px;
+  }
+
+  .brands__title {
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+
+  .brands__logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+  }
+
+  .brands__logo {
+    max-height: 50px;
+  }
 }
 
 /* =========================
