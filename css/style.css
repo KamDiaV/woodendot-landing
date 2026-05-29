@@ -1065,6 +1065,48 @@ h6 {
   height: 3px;
 }
 
+@media (max-width: 1024px) {
+  .quote {
+    max-width: 900px;
+    margin-bottom: 80px;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .quote {
+    max-width: 700px;
+    margin-bottom: 64px;
+    padding: 0 24px;
+  }
+
+  .quote__text {
+    margin-bottom: 28px;
+    font-size: 18px;
+  }
+
+  .quote__author {
+    margin-bottom: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote {
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+
+  .quote__text {
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+
+  .quote__author {
+    margin-bottom: 28px;
+    font-size: 14px;
+  }
+}
+
 /* =========================
   VALUES
 ========================= */
