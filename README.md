@@ -23,6 +23,7 @@ Responsive landing page built from a Figma design.
 ## Project Preview
 
 ![Woodendot Preview](./images/preview.jpg)
+![Woodendot Preview](./images/preview-2.jpg)
 
 ## Live Demo
 
