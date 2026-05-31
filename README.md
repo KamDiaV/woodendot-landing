@@ -26,7 +26,7 @@ Responsive landing page built from a Figma design.
 
 ## Live Demo
 
-link
+https://woodendot-landing.vercel.app/
 
 ## Repository
 
